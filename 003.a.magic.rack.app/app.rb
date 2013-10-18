@@ -43,8 +43,27 @@ class App
     twitter_search_results = Twitter.search("flatironschool")
     twitter_search_results.statuses.each do |tweet|
       # So now we have these individual tweet objects, twitter statuses.
-      
-    [200, {'Content-Type' => 'text/html'}, [response]]
+      html << "<li>#{tweet.user.name} says: #{tweet.text}</li>"
+    end
+    html << "</ul>"
+
+    [200, {'Content-Type' => 'text/html'}, [html]]
   end
 end
 
+# Okay and now our Rack Handler to actually load the application
+# on port 3002 of our computer.
+
+Rack::Handler::WEBrick.run(App.new, {:Port => 3002})
+
+# You should see the Rack output letting you know you have a server
+# running, this time on port 3002.
+
+# Open your browser again to http://localhost:3002
+#
+# Now look and see what people are saying about the Flatiron School on Twitter!
+#
+# What else can you build into this? Check out the Twitter gem
+# here https://github.com/sferik/twitter
+#
+# See what else you can do with rack!
