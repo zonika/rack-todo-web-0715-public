@@ -1,5 +1,5 @@
 ---
-  tags: todo, rack
+  tags: todo, rack, tutorial
   languages: ruby
 ---
 
