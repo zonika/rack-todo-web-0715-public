@@ -17,14 +17,14 @@ Signal.trap('INT') {Rack::Handler::WEBrick.shutdown}
 
 require 'twitter'
 
-Twitter.configure do |config|
+TWITTER = Twitter::REST::Client.new do |config|
   # I got this information from creating a new twitter application
   # under my developer account. 
   # https://dev.twitter.com/apps
   config.consumer_key = "9vahfyWzOnjJxj83SJxROQ"
   config.consumer_secret = "aYCt7k10fYf4svlSNz9oP7GbFi1QYPnUdvpOZpjgwYM"
-  config.oauth_token = "2085091-QdSttXlwq50BXqOUrNmd2zIPdQyxP873TzzsKhW8k"
-  config.oauth_token_secret = "MxwEh2JRvmHBYcMfsFv3o0MYhMx2yM77tVABftVboAE"
+  config.access_token = "2085091-QdSttXlwq50BXqOUrNmd2zIPdQyxP873TzzsKhW8k"
+  config.access_token_secret = "MxwEh2JRvmHBYcMfsFv3o0MYhMx2yM77tVABftVboAE"
 end
 
 # What do you think is going on up there? Well the twitter gem gives us a class,
@@ -40,8 +40,8 @@ class App
 
     # So far we've created an HTML string. Now the fun part. 
     # Let's search twitter.
-    twitter_search_results = Twitter.search("flatironschool")
-    twitter_search_results.statuses.each do |tweet|
+    twitter_search_results = TWITTER.search("flatironschool")
+    twitter_search_results.each do |tweet|
       # So now we have these individual tweet objects, twitter statuses.
       html << "<li>#{tweet.user.name} says: #{tweet.text}</li>"
     end

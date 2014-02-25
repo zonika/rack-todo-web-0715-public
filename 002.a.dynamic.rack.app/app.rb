@@ -6,7 +6,7 @@ Signal.trap('INT') {Rack::Handler::WEBrick.shutdown}
 
 class App
   def call(env)
-    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 003, we &#9829; you!"]]
+    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 004, we &#9829; you!"]]
   end
 end
 
@@ -20,14 +20,14 @@ require 'rack'
 
 class App
   def call(env)
-    seconds_in_25_days = 2160000 # I hope that's right.
+    seconds_in_17_days = 1468800 # I hope that's right.
 
     # Here comes a HERE doc. It's just a ruby string.
     response = <<-TXT
-    Hi Ruby 003. It's #{Time.now}. 
+    Hi Ruby 004. It's #{Time.now}. 
     Hit refresh and realize you've been learning Ruby
-    since #{(Time.now - seconds_in_25_days)}.
-    How many days is that? 25? With weekends? And look what you're doing.
+    since #{(Time.now - seconds_in_17_days)}.
+    How many days is that? 17? With weekends? And look what you're doing.
     Building a dynamic web application. I wonder what else you're capable of.
     TXT
 

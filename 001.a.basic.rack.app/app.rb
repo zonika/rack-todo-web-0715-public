@@ -88,7 +88,7 @@ end
 
 class App
   def call
-    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 003, we &:heart you!"]]
+    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 004, we &:heart you!"]]
   end
 end
 
@@ -106,7 +106,7 @@ end
 
 class App
   def call(env)
-    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 003, we &#9829; you!"]]
+    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 004, we &#9829; you!"]]
   end
 end
 
@@ -161,7 +161,7 @@ Rack::Handler::WEBrick.run(our_very_first_web_app, {:Port => 3000})
 # That's a web application. Cool, right?
 
 # But obviously there's more. See the thing is, in our application, that
-# string "Hi from Ruby 003, we &#9829; you!", we're sending, well, it's
+# string "Hi from Ruby 004, we &#9829; you!", we're sending, well, it's
 # totally arbitrary. We can build that string whenever we want, injecting
 # any content we want, at any time, and people will see it, changing, coming to life.
 
