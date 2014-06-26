@@ -21,6 +21,7 @@ TWITTER = Twitter::REST::Client.new do |config|
   # I got this information from creating a new twitter application
   # under my developer account. 
   # https://dev.twitter.com/apps
+  # You can create your own twitter app and use your own keys if you want.
   config.consumer_key = "9vahfyWzOnjJxj83SJxROQ"
   config.consumer_secret = "aYCt7k10fYf4svlSNz9oP7GbFi1QYPnUdvpOZpjgwYM"
   config.access_token = "2085091-QdSttXlwq50BXqOUrNmd2zIPdQyxP873TzzsKhW8k"
