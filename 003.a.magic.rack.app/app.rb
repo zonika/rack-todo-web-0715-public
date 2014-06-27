@@ -21,10 +21,10 @@ TWITTER = Twitter::REST::Client.new do |config|
   # I got this information from creating a new twitter application
   # under my developer account. 
   # https://dev.twitter.com/apps
-  config.consumer_key = "9vahfyWzOnjJxj83SJxROQ"
-  config.consumer_secret = "aYCt7k10fYf4svlSNz9oP7GbFi1QYPnUdvpOZpjgwYM"
-  config.access_token = "2085091-QdSttXlwq50BXqOUrNmd2zIPdQyxP873TzzsKhW8k"
-  config.access_token_secret = "MxwEh2JRvmHBYcMfsFv3o0MYhMx2yM77tVABftVboAE"
+  config.consumer_key = "YThFpw0CyXIJ8g73AAmCHUJL5"
+  config.consumer_secret = "KIkenjO7wv248jSNIKltOSZIjWXiORQEpSNVRxgO5MsO7Ht3wq"
+  config.access_token = "276237692-vwCB7oLa5TWBoDFv7MVdap6aDxzAqdVFbpyjrwQM"
+  config.access_token_secret = "iXQ7vSO7Rvq8zVnZO3u8LDRMQvTzcHCfTRDUTBB3ZNRk0"
 end
 
 # What do you think is going on up there? Well the twitter gem gives us a class,
