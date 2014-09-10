@@ -6,7 +6,7 @@
 
 # Rack!
 
-Follow the instructions in the comments of each file. Explore!
+### Follow the instructions in the comments of each file. Explore!
 
 ## Resources
 * [Rack](http://rack.github.io/) - [Rack: a Ruby Webserver Interface](http://rack.github.io/)
