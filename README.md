@@ -1,10 +1,10 @@
 ---
-  tags: todo, rack, tutorial
+  tags: todo, rack, tutorial, deprecated
   languages: ruby
   resources: 4
 ---
 
-# Rack!
+# Rack! DEPRECEATED
 
 ### Follow the instructions in the comments of each file. Explore!
 
