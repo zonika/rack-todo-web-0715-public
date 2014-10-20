@@ -88,7 +88,7 @@ end
 
 class App
   def call
-    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 004, we &:heart you!"]]
+    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 006, we &:heart you!"]]
   end
 end
 
@@ -106,7 +106,7 @@ end
 
 class App
   def call(env)
-    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 004, we &#9829; you!"]]
+    [200, {'Content-Type' => 'text/html'}, ["Hi from Ruby 006, we &#9829; you!"]]
   end
 end
 
