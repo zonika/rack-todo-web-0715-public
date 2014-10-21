@@ -18,13 +18,11 @@ Signal.trap('INT') {Rack::Handler::WEBrick.shutdown}
 require 'twitter'
 
 TWITTER = Twitter::REST::Client.new do |config|
-  # I got this information from creating a new twitter application
-  # under my developer account. 
-  # https://dev.twitter.com/apps
-  config.consumer_key = "YThFpw0CyXIJ8g73AAmCHUJL5"
-  config.consumer_secret = "KIkenjO7wv248jSNIKltOSZIjWXiORQEpSNVRxgO5MsO7Ht3wq"
-  config.access_token = "276237692-vwCB7oLa5TWBoDFv7MVdap6aDxzAqdVFbpyjrwQM"
-  config.access_token_secret = "iXQ7vSO7Rvq8zVnZO3u8LDRMQvTzcHCfTRDUTBB3ZNRk0"
+  # Go to https://dev.twitter.com/apps and create a new twitter application and generate these keys and tokens
+  config.consumer_key = "consumer key here"
+  config.consumer_secret = "consumer secret here"
+  config.access_token = "access token here"
+  config.access_token_secret = "token secret here"
 end
 
 # What do you think is going on up there? Well the twitter gem gives us a class,
