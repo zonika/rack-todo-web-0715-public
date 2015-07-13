@@ -1,9 +1,3 @@
----
-  tags: todo, rack, tutorial
-  languages: ruby
-  resources: 4
----
-
 ## Rack!
 
 ### Fork and clone this lab then follow the instructions in the comments of each file. Explore!
